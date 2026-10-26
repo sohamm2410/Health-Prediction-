@@ -58,15 +58,6 @@ python generate_dataset.py
 
 The generator uses a fixed random seed, so repeated runs produce the same CSV.
 
-## Deploy to Streamlit Community Cloud
-
-1. Create a GitHub repository and upload this project's files, including `app.py`, `requirements.txt`, `generate_dataset.py`, and `data/symptom_disease.csv`.
-2. Sign in to [Streamlit Community Cloud](https://share.streamlit.io/) and connect your GitHub account.
-3. Choose **Create app**, select the repository and branch, and set the main file path to `app.py`.
-4. Deploy. Streamlit installs the packages listed in `requirements.txt`.
-5. Open the generated app URL to share your project.
-
-Keep the dataset in the repository at `data/symptom_disease.csv`; the app expects that exact path.
 
 ## Project structure
 
@@ -80,6 +71,3 @@ Health Prediction System/
     └── symptom_disease.csv    # Included training dataset
 ```
 
-## Suggested project presentation
-
-Explain the input features (binary symptom columns), target (condition label), train/test split, Random Forest classifier, and the limits of synthetic data. A useful future improvement would be to seek a properly licensed, medically reviewed dataset and validate the approach with qualified domain experts before making any real-world claims.
